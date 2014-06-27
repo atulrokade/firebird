@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>test</class>
+ <widget class="QMainWindow" name="test">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="testOpenglWindow" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>29</y>
+      <width>211</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuNew_Load">
+     <property name="title">
+      <string>New/Load</string>
+     </property>
+     <addaction name="actionEnv"/>
+    </widget>
+    <addaction name="menuNew_Load"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionEnv">
+   <property name="text">
+    <string>Enviourment</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>testOpenglWindow</class>
+   <extends>QWidget</extends>
+   <header>testopenglwindow.h</header>
+   <container>1</container>
+   <slots>
+    <slot>getEnvName(string)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>menubar</sender>
+   <signal>triggered(QAction*)</signal>
+   <receiver>test</receiver>
+   <slot>menuClicked(QAction*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>18</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>266</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>test</sender>
+   <signal>setEnvName(string)</signal>
+   <receiver>widget</receiver>
+   <slot>getEnvName(string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>162</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>setEnvName(string)</signal>
+  <slot>menuClicked(QAction*)</slot>
+ </slots>
+</ui>

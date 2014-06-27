@@ -1,0 +1,6 @@
+Chassis 0 0
+Motors 0 2
+Line_Sensors 0 1
+IR_Distance_Sensors 0 0
+Sonar_Sensors 0 0
+IR_Proximity_Sensors 0 0

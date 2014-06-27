@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1408</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Firbird</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="MyOpenGLWindow" name="panelGL" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1120</width>
+      <height>700</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="lineFollowerButton">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>360</y>
+      <width>122</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Line Follower</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="greenHouseButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>400</y>
+      <width>122</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Green House</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>490</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FireBird Model</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1157</x>
+      <y>319</y>
+      <width>70</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mode :</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1151</x>
+      <y>444</y>
+      <width>122</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Maze Solver</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="LpushButton">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>150</y>
+      <width>30</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>L</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FpushButton">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>120</y>
+      <width>30</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>F</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="leftSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1259</x>
+      <y>150</y>
+      <width>62</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-300.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>300.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>10.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>10.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="rightSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>150</y>
+      <width>62</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-300.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>300.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>10.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>10.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BpushButton">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>180</y>
+      <width>30</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RpushButton">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>150</y>
+      <width>30</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>R</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="leftSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1779</x>
+      <y>830</y>
+      <width>62</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-300.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>300.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>10.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>10.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FpushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>800</y>
+      <width>30</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>F</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LpushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1670</x>
+      <y>830</y>
+      <width>30</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>L</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="rightSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1850</x>
+      <y>830</y>
+      <width>62</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-300.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>300.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>10.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>10.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RpushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1730</x>
+      <y>830</y>
+      <width>30</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>R</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BpushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>860</y>
+      <width>30</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1408</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuNew_Load">
+     <property name="title">
+      <string>New/Load</string>
+     </property>
+     <addaction name="actionEnviourmrnt"/>
+     <addaction name="actionRobot"/>
+    </widget>
+    <addaction name="menuNew_Load"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionNew_Load_Robot">
+   <property name="text">
+    <string>New/Load </string>
+   </property>
+  </action>
+  <action name="actionEnviourmrnt">
+   <property name="text">
+    <string>Enviourment</string>
+   </property>
+  </action>
+  <action name="actionRobot">
+   <property name="text">
+    <string>Robot</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyOpenGLWindow</class>
+   <extends>QWidget</extends>
+   <header>myopenglwindow.h</header>
+   <container>1</container>
+   <slots>
+    <signal>releasedRun()</signal>
+    <signal>printCommand(QString)</signal>
+    <slot>forward()</slot>
+    <slot>left()</slot>
+    <slot>backward()</slot>
+    <slot>right()</slot>
+    <slot>stops()</slot>
+    <slot>forwardTranslate(int)</slot>
+    <slot>backwardTranslate(int)</slot>
+    <slot>rightTurn(int)</slot>
+    <slot>leftTurn(int)</slot>
+    <slot>reset()</slot>
+    <slot>setVelocityLeft(double)</slot>
+    <slot>setVelocityRight(double)</slot>
+    <slot>setTime(double)</slot>
+    <slot>start()</slot>
+    <slot>setTroughtRow(int)</slot>
+    <slot>setTroughtColumn(int)</slot>
+    <slot>goToTrought()</slot>
+    <slot>run()</slot>
+    <slot>setCommand(QString)</slot>
+    <slot>run1()</slot>
+    <slot>setLineFollowerCaseStudy()</slot>
+    <slot>setGreenHouseCaseStudy()</slot>
+    <slot>setParts()</slot>
+    <slot>setMazeSolverCaseStudy()</slot>
+    <slot>getRobotName(string)</slot>
+    <slot>getEnvName1(string)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lineFollowerButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>panelGL</receiver>
+   <slot>setLineFollowerCaseStudy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1178</x>
+     <y>392</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1102</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>greenHouseButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>panelGL</receiver>
+   <slot>setGreenHouseCaseStudy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1154</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1064</x>
+     <y>222</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>panelGL</receiver>
+   <slot>setParts()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1236</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1084</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>panelGL</receiver>
+   <slot>setMazeSolverCaseStudy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1221</x>
+     <y>488</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1102</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menuBar</sender>
+   <signal>triggered(QAction*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>menuClicked(QAction*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>7</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-7</x>
+     <y>11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MainWindow</sender>
+   <signal>setEnvName(string)</signal>
+   <receiver>panelGL</receiver>
+   <slot>getEnvName1(string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1231</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1057</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MainWindow</sender>
+   <signal>setRobotName(string)</signal>
+   <receiver>panelGL</receiver>
+   <slot>getRobotName(string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1257</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1030</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>setEnvName(string)</signal>
+  <signal>setRobotName(string)</signal>
+  <slot>run()</slot>
+  <slot>menuClicked(QAction*)</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
