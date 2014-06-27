@@ -1,0 +1,16 @@
+/home/atul/Desktop/Environment/blank.png 270 270 0 0 0 0
+Cuboid_2 10 220 10 30 20 10
+Cuboid_3 50 20 30 10 220 0
+Cuboid_4 50 20 30 70 220 0
+Cuboid_5 50 20 30 130 220 0
+Cuboid_6 40 20 30 190 220 0
+Cuboid_7 10 200 10 200 20 10
+Cuboid_8 10 200 10 90 20 10
+Cuboid_9 10 210 10 150 10 10
+Cuboid_10 50 10 30 10 10 0
+Cuboid_11 50 10 30 70 10 0
+Cuboid_12 40 10 30 190 10 0
+Cuboid_13 10 90 10 230 140 10
+Cuboid_14 20 30 10 210 120 10
+Cuboid_15 10 110 10 230 20 10
+Cuboid_16 10 10 10 150 10 0

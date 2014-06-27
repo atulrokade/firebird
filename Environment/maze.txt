@@ -1,0 +1,10 @@
+/home/atul/Desktop/Environment/Grid.png 1305 1005 0 0 0 0
+Cuboid_1 150 1010 50 0 0 0
+Cuboid_2 1045 150 50 255 0 0
+Cuboid_3 1150 150 50 150 860 0
+Cuboid_4 150 600 50 1150 150 0
+Cuboid_5 900 90 50 150 260 0
+Cuboid_6 600 100 50 550 450 0
+Cuboid_7 190 100 50 260 450 0
+Cuboid_8 100 350 50 260 550 0
+Cuboid_9 600 100 50 450 650 0
